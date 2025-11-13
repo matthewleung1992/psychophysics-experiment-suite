@@ -1,44 +1,14 @@
 clc;
 clear;
-addpath(genpath('D:\BaiduNetdiskDownload\Ali_EXP_data\Intan'));
-addpath(genpath('D:\Files\MEG Revision Paper\AllCodings\Some Toolboxes\spm12\external\fieldtrip'));
 
-Runs={'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r1_250820_151918.rhd';%100ms
-      %'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r2_250820_152505.rhd';(empty) 
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r3_250820_152652.rhd';%80ms
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r4_250820_153906.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r5_250820_155014.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r6_250820_160440.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day1_r9_250820_162905.rhd';
-      ...
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r1_250821_151046.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r2_250821_152037.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r3_250821_153200.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r5_250821_154335.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r6_250821_155425.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r8_250821_161044.rhd';
-      'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Ali_colour_exp\Mars_Ali_Exp_RF_day2_r9_250821_162139.rhd';
+Runs={'PLACEHOLDER.rhc';
       };
 
-RunsEvents={'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_1';
-            %'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_2';(empty) 
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_3';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_4';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_5';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_6';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY1\Run_9';
-            ...
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_1';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_2';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_3';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_5';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_6';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_8';
-            'D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\Behavior_Data\MARS_RF_DAY2\Run_9';
+RunsEvents={'PLACEHOLDER_FOLDER';
 };
 
 %%%%%%%%%%% Save Address %%%%%%%%%%%
-Save_Address='D:\BaiduNetdiskDownload\Ali_EXP_DATA_RF\LFPAnalysis';
+Save_Address='C:\LFPAnalysis';
 Save_Name='RF';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% Settings %%%%%%%%%%%
@@ -298,6 +268,7 @@ for electrode=1:size(TF_N.powspctrm,2)
     colormap(jet(256));
     k=k+1;
 end
+
 
 
 
