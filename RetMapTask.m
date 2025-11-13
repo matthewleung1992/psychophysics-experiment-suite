@@ -1,3 +1,10 @@
+% Behavioral Experiment Control System
+% Developed at RIKEN Center for Brain Science
+% 
+% NOTE: This is a sanitized version for portfolio purposes.
+% Hardware-specific configurations and proprietary functions have been 
+% modified or removed. Not intended for direct deployment.
+
 function monkey_stimuli_presentation()
     % Revamped Monkey Stimuli Presentation Script using PsychToolbox
     % Uses eyetracker for fixation detection and peripheral flash stimuli
@@ -17,7 +24,7 @@ function monkey_stimuli_presentation()
     GAZE_WINDOW = 50;           % D: Fixation window size (pixels) - square window DxD
     GAZE_PERCENTAGE = 0.95;     % G: Percentage of time gaze must be in window (0-1)
     DUMMY_MODE = 1;             % 0 = real eyetracker, 1 = mouse simulation
-    ADDRESS_N = '100.1.1.1';   % Eyelink IP address
+    ADDRESS_N = '192.168.1.100';   % Eyelink IP address (placeholder - configure for your setup)
     DEBUG_MODE = 1;             % 1 = show debug messages for fixation detection
     FLASH_COLOR = [0 1 1];      % Cyan [R G B] normalized 0-1
     BACKGROUND_COLOR = [0.7 0.7 0.7]; % Light grey background
@@ -606,7 +613,9 @@ function cleanupEyetracker()
 end
 
 function deliverReward()
-    % Placeholder for reward delivery
-    % TODO: Replace with actual reward system trigger
+    % Placeholder for reward delivery system
+    % In production: interfaces with juice delivery hardware
+    % For demonstration: logs reward event only
     fprintf('*** REWARD DELIVERED! ***\n');
+
 end
